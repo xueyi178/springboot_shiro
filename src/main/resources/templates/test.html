@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试Thymelaf的使用</title>
+</head>
+<body>
+	<h3 th:text="${name}"></h3>
+	<hr />
+	<div shiro:hasPermission="user:add">
+		进入了用户的添加的功能：<a href="/user/add">用户添加</a><br />
+	</div>
+	<div shiro:hasPermission="user:update">
+		进入了用户的更新的功能：<a href="/user/update">用户更新</a><br />
+	</div>
+	<a href="/user/toLogin">登录</a><br />
+</body>
+</html>
